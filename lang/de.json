@@ -1,0 +1,84 @@
+{
+  "menuTitle": "Speisekarte",
+  "filters": ["Alles", "Pizza", "Burger", "Getränke"],
+  "items": [
+    {
+      "category": "Pizza",
+      "title": "Pizza Margherita",
+      "description": "Klassische Pizza mit Tomatensoße und Käse",
+      "image": "image/Pizza1.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Salami",
+      "description": "Herzhafte Salami auf knusprigem Boden",
+      "image": "image/Pizza2.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Hawaii",
+      "description": "Mit Schinken und Ananas – der Klassiker",
+      "image": "image/Pizza3.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Funghi",
+      "description": "Frische Champignons auf Tomatensoße",
+      "image": "image/Pizza4.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Tonno",
+      "description": "Mit Thunfisch und roten Zwiebeln",
+      "image": "image/Pizza5.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Cheeseburger",
+      "description": "Saftiger Burger mit Käse und Salat",
+      "image": "image/Burger1.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Chicken Burger",
+      "description": "Knuspriges Hähnchenfilet mit Mayonnaise",
+      "image": "image/Burger2.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Veggie Burger",
+      "description": "Gemüsepatty mit frischem Gemüse",
+      "image": "image/Burger3.jpg"
+    },
+    {
+      "category": "Getränke",
+      "title": "Cola",
+      "description": "Erfrischendes Kaltgetränk",
+      "image": "image/Drink1.jpg"
+    },
+    {
+      "category": "Getränke",
+      "title": "Orangensaft",
+      "description": "Frisch gepresster Orangensaft",
+      "image": "image/Drink2.jpg"
+    },
+    {
+      "category": "Getränke",
+      "title": "Mineralwasser",
+      "description": "Still oder spritzig",
+      "image": "image/Drink3.jpg"
+    },
+    {
+      "category": "Getränke",
+      "title": "Eistee Pfirsich",
+      "description": "Lecker und süß – perfekt im Sommer",
+      "image": "image/Drink4.jpg"
+    },
+    {
+      "category": "Getränke",
+      "title": "Kaffee",
+      "description": "Frisch gebrühter Kaffee",
+      "image": "image/Drink5.jpg"
+    }
+  ]
+}

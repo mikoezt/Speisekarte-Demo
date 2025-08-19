@@ -1,0 +1,84 @@
+{
+  "menuTitle": "Menü",
+  "filters": ["Hepsi", "Pizza", "Burger", "İçecekler"],
+  "items": [
+    {
+      "category": "Pizza",
+      "title": "Pizza Margherita",
+      "description": "Domates sosu ve peynir ile klasik pizza",
+      "image": "image/Pizza1.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Sucuklu",
+      "description": "Baharatlı sucuk ile nefis lezzet",
+      "image": "image/Pizza2.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Hawaii",
+      "description": "Jambon ve ananas ile – klasik",
+      "image": "image/Pizza3.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Mantarlı",
+      "description": "Taze mantarlarla hazırlanmış pizza",
+      "image": "image/Pizza4.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Ton Balıklı",
+      "description": "Ton balığı ve kırmızı soğan ile",
+      "image": "image/Pizza5.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Cheeseburger",
+      "description": "Peynir ve marul ile sulu burger",
+      "image": "image/Burger1.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Tavuk Burger",
+      "description": "Mayonezli çıtır tavuk fileto",
+      "image": "image/Burger2.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Vejetaryen Burger",
+      "description": "Sebze köftesi ve taze garnitür",
+      "image": "image/Burger3.jpg"
+    },
+    {
+      "category": "İçecekler",
+      "title": "Kola",
+      "description": "Ferahlık veren soğuk içecek",
+      "image": "image/Drink1.jpg"
+    },
+    {
+      "category": "İçecekler",
+      "title": "Portakal Suyu",
+      "description": "Taze sıkılmış portakal suyu",
+      "image": "image/Drink2.jpg"
+    },
+    {
+      "category": "İçecekler",
+      "title": "Maden Suyu",
+      "description": "Sade veya gazlı",
+      "image": "image/Drink3.jpg"
+    },
+    {
+      "category": "İçecekler",
+      "title": "Şeftali Ice Tea",
+      "description": "Tatlı ve serinletici – yaz için ideal",
+      "image": "image/Drink4.jpg"
+    },
+    {
+      "category": "İçecekler",
+      "title": "Kahve",
+      "description": "Taze demlenmiş kahve",
+      "image": "image/Drink5.jpg"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispiel Speisekarte</title>
+    <link rel="stylesheet" href="style/styleMenu.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <ul>
+            <li>
+                <div class="headerCompany">
+                    <img src="image/Logo.jpeg" alt="Logo" />
+                    <!-- Optional: Firmenname hier einfügen -->
+                    <!-- <h1>Firmenname</h1> -->
+                </div>                   
+            </li>
+        </ul>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="mainMenu">
+    <!-- TITEL -->
+        <div class="menuTitle"></div>
+
+        <!-- SPRACHWAHL -->
+        <div class="language-switcher">
+            <button data-lang="de">DE</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="tr">TR</button>
+        </div>
+
+        <!-- FILTER & ITEMS -->
+        <section class="filter-menu">
+            <!-- FILTER SEITE -->
+            <div class="filter-content">
+                <h1 class="filterTitle">Filter</h1>
+                <ul class="ulFilter"></ul>
+            </div>
+
+            <!-- ITEMS CONTAINER -->
+            <div class="items-container">
+                <div class="items"></div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- SCRIPTS -->
+    <script src="menu.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

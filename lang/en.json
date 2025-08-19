@@ -1,0 +1,84 @@
+{
+  "menuTitle": "Menu",
+  "filters": ["All", "Pizza", "Burgers", "Drinks"],
+  "items": [
+    {
+      "category": "Pizza",
+      "title": "Pizza Margherita",
+      "description": "Classic pizza with tomato sauce and cheese",
+      "image": "image/Pizza1.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Salami",
+      "description": "Spicy salami on crispy crust",
+      "image": "image/Pizza2.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Hawaii",
+      "description": "With ham and pineapple – a classic",
+      "image": "image/Pizza3.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Funghi",
+      "description": "Fresh mushrooms on tomato sauce",
+      "image": "image/Pizza4.jpg"
+    },
+    {
+      "category": "Pizza",
+      "title": "Pizza Tonno",
+      "description": "With tuna and red onions",
+      "image": "image/Pizza5.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Cheeseburger",
+      "description": "Juicy burger with cheese and lettuce",
+      "image": "image/Burger1.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Chicken Burger",
+      "description": "Crispy chicken filet with mayo",
+      "image": "image/Burger2.jpg"
+    },
+    {
+      "category": "Burger",
+      "title": "Veggie Burger",
+      "description": "Vegetable patty with fresh toppings",
+      "image": "image/Burger3.jpg"
+    },
+    {
+      "category": "Drinks",
+      "title": "Cola",
+      "description": "Refreshing cold beverage",
+      "image": "image/Drink1.jpg"
+    },
+    {
+      "category": "Drinks",
+      "title": "Orange Juice",
+      "description": "Freshly squeezed orange juice",
+      "image": "image/Drink2.jpg"
+    },
+    {
+      "category": "Drinks",
+      "title": "Mineral Water",
+      "description": "Still or sparkling",
+      "image": "image/Drink3.jpg"
+    },
+    {
+      "category": "Drinks",
+      "title": "Peach Ice Tea",
+      "description": "Sweet and refreshing – perfect in summer",
+      "image": "image/Drink4.jpg"
+    },
+    {
+      "category": "Drinks",
+      "title": "Coffee",
+      "description": "Freshly brewed coffee",
+      "image": "image/Drink5.jpg"
+    }
+  ]
+}

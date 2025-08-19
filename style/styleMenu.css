@@ -1,0 +1,291 @@
+/* ===============================
+   GRUNDLEGENDES STYLING
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* ===============================
+   LISTEN UND ELEMENTE RESET
+   =============================== */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+header {
+    background-color: #550a0a;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1px #000;
+}
+
+.headerCompany {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.headerCompany img {
+    background-color: #FFF;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.headerCompany h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* ===============================
+   MAIN / MENÜ-BEREICH
+   =============================== */
+main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.menuTitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px 0;
+    text-align: center;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* ===============================
+   FILTER-MENÜ
+   =============================== */
+.filter-menu {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filterTitle {
+    font-size: 20px;
+    color: #000;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+.ulFilter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.ulFilter li {
+    padding: 8px 20px;
+    background: #000;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+.ulFilter li:hover {
+    background: #484848;
+}
+
+.ulFilter li.current {
+    background: #550a0a;
+}
+
+.ulFilter li.current:hover {
+    background: #9adccc;
+}
+
+/* ===============================
+   BILDER CONTAINER
+   =============================== */
+.items-container {
+    border: 3px solid #ddd;
+    border-radius: 16px;
+    padding: 20px;
+    background: #fafafa;
+    position: relative;     
+}
+
+.items-container::before {
+    content: "Unsere Gerichte";   /* Titel im Rahmen */
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    background: #fff;
+    padding: 0 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* BOX FÜR BILDER UND BESCHREIBUNGEN */
+.item-box {
+    opacity: 1;
+    transform: scale(1);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    
+}
+
+.item-box:hover {
+    transform: translateY(-4px); /* hebt sich leicht beim Hover */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.item-box.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+.item-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item-description {
+    padding: 10px;
+    text-align: center;
+}
+
+.item-description h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-description p {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+/* ===============================
+   MEDIA QUERIES
+   =============================== */
+
+/* Tablets / Portrait */
+@media (max-width: 768px) {
+    .headerCompany {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerCompany img {
+        width: 70px;
+        height: 70px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .headerCompany h1 {
+        font-size: 28px;
+    }
+
+    .menuTitle {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .filter-content {
+        margin-bottom: 10px;
+    }
+
+    .filterTitle {
+        font-size: 18px;
+    }
+
+    .items-container {
+        width: 100%;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Smartphones / Portrait */
+@media (max-width: 480px) {
+    .headerCompany img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .headerCompany h1 {
+        font-size: 24px;
+    }
+
+    .menuTitle {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+
+    .filterTitle {
+        font-size: 16px;
+    }
+
+    .items-container {
+        padding: 0 10px;
+    }
+
+    .items {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .item-description h2 {
+        font-size: 16px;
+    }
+
+    .item-description p {
+        font-size: 12px;
+    }
+}
