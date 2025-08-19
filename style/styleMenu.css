@@ -208,6 +208,84 @@ main {
 }
 
 
+/* ===============================
+   FLAGS / LANGUAGE SWITCHER
+   =============================== */
+
+/* Sprachwahl Container */
+.language-switcher {
+    position: absolute;   /* absolut positioniert relativ zum body */
+    right: 20px;          /* Abstand vom rechten Rand */
+    z-index: 200;
+}
+
+/* Hauptbutton */
+.lang-toggle {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.lang-toggle:hover {
+  background: #f5f5f5;
+}
+
+/* Dropdown */
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;             /* statt left: 0 */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    width: 180px;
+    z-index: 100;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: all 0.25s ease;
+}
+
+.lang-dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;  /* jetzt wieder klickbar */
+  transform: translateY(0);
+}
+
+/* Dropdown Einträge */
+.lang-dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-dropdown li:hover {
+  background: #f0f0f0;
+}
+
+/* Flaggen */
+.flag-icon {
+  width: 20px;
+  height: auto;
+  border-radius: 3px;
+}
+
 
 /* ===============================
    MEDIA QUERIES
@@ -251,6 +329,11 @@ main {
     .items {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
+
+    .language-switcher {
+        top: calc(90px + 10px);
+        right: 20px;
+    }
 }
 
 /* Smartphones / Portrait */
@@ -287,5 +370,10 @@ main {
 
     .item-description p {
         font-size: 12px;
+    }
+
+    .language-switcher {
+        top: calc(80px + 10px);
+        right: 15px;
     }
 }

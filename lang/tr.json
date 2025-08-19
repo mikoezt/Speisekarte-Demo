@@ -1,5 +1,6 @@
 {
   "menuTitle": "Menü",
+  "filterTitle":"Flitre",
   "filters": ["Hepsi", "Pizza", "Burger", "İçecekler"],
   "items": [
     {

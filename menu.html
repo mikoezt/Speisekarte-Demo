@@ -19,24 +19,28 @@
             </li>
         </ul>
     </header>
+    <!-- SPRACHWAHL -->
+    <div class="language-switcher">
+      <button class="lang-toggle">
+        <img src="image/flags/de-flag.svg" alt="DE" class="flag-icon"> Deutsch ▼
+      </button>
+      <ul class="lang-dropdown">
+        <li data-lang="de"><img src="image/flags/de-flag.svg" class="flag-icon"> Deutsch</li>
+        <li data-lang="en"><img src="image/flags/en-flag.svg" class="flag-icon"> English</li>
+        <li data-lang="tr"><img src="image/flags/tr-flag.svg" class="flag-icon"> Türkçe</li>
+      </ul>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main class="mainMenu">
     <!-- TITEL -->
         <div class="menuTitle"></div>
 
-        <!-- SPRACHWAHL -->
-        <div class="language-switcher">
-            <button data-lang="de">DE</button>
-            <button data-lang="en">EN</button>
-            <button data-lang="tr">TR</button>
-        </div>
-
         <!-- FILTER & ITEMS -->
         <section class="filter-menu">
             <!-- FILTER SEITE -->
             <div class="filter-content">
-                <h1 class="filterTitle">Filter</h1>
+                <h1 class="filterTitle"></h1>
                 <ul class="ulFilter"></ul>
             </div>
 
@@ -51,6 +55,5 @@
 
     <!-- SCRIPTS -->
     <script src="menu.js"></script>
-    <script src="script/script.js"></script>
 </body>
 </html>

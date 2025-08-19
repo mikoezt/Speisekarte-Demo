@@ -1,5 +1,6 @@
 {
   "menuTitle": "Speisekarte",
+  "filterTitle":"Filter",
   "filters": ["Alles", "Pizza", "Burger", "Getränke"],
   "items": [
     {
