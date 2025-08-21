@@ -1,85 +1,101 @@
 {
   "menuTitle": "Menü",
-  "filterTitle":"Flitre",
+  "cartTitle": "Sipariş",
+  "cartEmpty": "Henüz eklenen yemek yok",
+  "cartSum": "Toplam",
+  "filterTitle": "Flitre",
   "filters": ["Hepsi", "Pizza", "Burger", "İçecekler"],
   "items": [
     {
       "category": "Pizza",
       "title": "Pizza Margherita",
       "description": "Domates sosu ve peynir ile klasik pizza",
-      "image": "image/Pizza1.jpg"
+      "image": "image/Pizza1.jpg",
+      "price": "8.50"
     },
     {
       "category": "Pizza",
       "title": "Pizza Sucuklu",
       "description": "Baharatlı sucuk ile nefis lezzet",
-      "image": "image/Pizza2.jpg"
+      "image": "image/Pizza2.jpg",
+      "price": "9.50"
     },
     {
       "category": "Pizza",
       "title": "Pizza Hawaii",
       "description": "Jambon ve ananas ile – klasik",
-      "image": "image/Pizza3.jpg"
+      "image": "image/Pizza3.jpg",
+      "price": "10.00"
     },
     {
       "category": "Pizza",
       "title": "Pizza Mantarlı",
       "description": "Taze mantarlarla hazırlanmış pizza",
-      "image": "image/Pizza4.jpg"
+      "image": "image/Pizza4.jpg",
+      "price": "9.00"
     },
     {
       "category": "Pizza",
       "title": "Pizza Ton Balıklı",
       "description": "Ton balığı ve kırmızı soğan ile",
-      "image": "image/Pizza5.jpg"
+      "image": "image/Pizza5.jpg",
+      "price": "10.50"
     },
     {
       "category": "Burger",
       "title": "Cheeseburger",
       "description": "Peynir ve marul ile sulu burger",
-      "image": "image/Burger1.jpg"
+      "image": "image/Burger1.jpg",
+      "price": "7.50"
     },
     {
       "category": "Burger",
       "title": "Tavuk Burger",
       "description": "Mayonezli çıtır tavuk fileto",
-      "image": "image/Burger2.jpg"
+      "image": "image/Burger2.jpg",
+      "price": "8.00"
     },
     {
       "category": "Burger",
       "title": "Vejetaryen Burger",
       "description": "Sebze köftesi ve taze garnitür",
-      "image": "image/Burger3.jpg"
+      "image": "image/Burger3.jpg",
+      "price": "7.00"
     },
     {
       "category": "İçecekler",
       "title": "Kola",
       "description": "Ferahlık veren soğuk içecek",
-      "image": "image/Drink1.jpg"
+      "image": "image/Drink1.jpg",
+      "price": "2.50"
     },
     {
       "category": "İçecekler",
       "title": "Portakal Suyu",
       "description": "Taze sıkılmış portakal suyu",
-      "image": "image/Drink2.jpg"
+      "image": "image/Drink2.jpg",
+      "price": "3.00"
     },
     {
       "category": "İçecekler",
       "title": "Maden Suyu",
       "description": "Sade veya gazlı",
-      "image": "image/Drink3.jpg"
+      "image": "image/Drink3.jpg",
+      "price": "2.00"
     },
     {
       "category": "İçecekler",
       "title": "Şeftali Ice Tea",
       "description": "Tatlı ve serinletici – yaz için ideal",
-      "image": "image/Drink4.jpg"
+      "image": "image/Drink4.jpg",
+      "price": "2.80"
     },
     {
       "category": "İçecekler",
       "title": "Kahve",
       "description": "Taze demlenmiş kahve",
-      "image": "image/Drink5.jpg"
+      "image": "image/Drink5.jpg",
+      "price": "2.50"
     }
   ]
 }

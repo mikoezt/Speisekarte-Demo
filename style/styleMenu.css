@@ -1,4 +1,20 @@
 /* ===============================
+   FARBEN
+   =============================== */
+
+:root {
+    --color-bg: #ece7da;
+    --color-primary: #49281f;
+    --color-secondary: #484848;
+    --color-text: #333;
+    --color-text-light: #ffffff;
+    --color-border: #ddd;
+    --color-black: #000;
+    --color-white: #fff;
+
+}
+
+/* ===============================
    GRUNDLEGENDES STYLING
    =============================== */
 * {
@@ -8,7 +24,7 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: var(--color-bg);
     font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
 }
@@ -33,12 +49,12 @@ ul {
    HEADER
    =============================== */
 header {
-    background-color: #550a0a;
+    background-color: var(--color-primary);
     padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px var(--color-black);
 }
 
 .headerCompany {
@@ -48,7 +64,7 @@ header {
 }
 
 .headerCompany img {
-    background-color: #FFF;
+    background-color: var(--color-white);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -76,7 +92,7 @@ main {
     font-weight: bold;
     margin: 30px 0;
     text-align: center;
-    color: #333;
+    color: var(--color-primary);
     line-height: 1.2;
 }
 
@@ -97,7 +113,7 @@ main {
 
 .filterTitle {
     font-size: 20px;
-    color: #000;
+    color: var(--color-black);
     font-family: monospace;
     margin-bottom: 10px;
 }
@@ -106,42 +122,44 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid var(--color-primary);
     padding-bottom: 10px;
     margin-bottom: 10px;
+    gap: 8px;
 }
 
 .ulFilter li {
-    padding: 8px 20px;
-    background: #000;
+    padding: 8px 18px;
+    background: var(--color-white);
     cursor: pointer;
-    margin: 5px;
     font-size: 1em;
-    color: #fff;
-    font-weight: bolder;
-    border-radius: 15px;
+    color: var(--color-text);
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid var(--color-primary);
+    transition: all 0.25s ease;
 }
 
 .ulFilter li:hover {
-    background: #484848;
+    background: var(--color-secondary);
+    color: var(--color-text-light);
+    border-color: var(--color-secondary);
 }
 
 .ulFilter li.current {
-    background: #550a0a;
-}
-
-.ulFilter li.current:hover {
-    background: #9adccc;
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    border-color: var(--color-primary);
 }
 
 /* ===============================
    BILDER CONTAINER
    =============================== */
 .items-container {
-    border: 3px solid #ddd;
+    border: 3px solid var(--color-primary);
     border-radius: 16px;
     padding: 20px;
-    background: #fafafa;
+    background: var(--color-bg);
     position: relative;     
 }
 
@@ -150,10 +168,10 @@ main {
     position: absolute;
     top: -14px;
     left: 20px;
-    background: #fff;
+    background: var(--color-bg);
     padding: 0 8px;
     font-weight: bold;
-    color: #333;
+    color: var(--color-text);
 }
 
 .items {
@@ -164,18 +182,17 @@ main {
 
 /* BOX FÜR BILDER UND BESCHREIBUNGEN */
 .item-box {
-    opacity: 1;
-    transform: scale(1);
-    border: 1px solid #e0e0e0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
     border-radius: 12px;
-    background: #fff;
+    background: var(--color-white);
+    padding-bottom: 60px; /* Platz für Footer */
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    
 }
-
 .item-box:hover {
-    transform: translateY(-4px); /* hebt sich leicht beim Hover */
+    transform: translateY(-4px);
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
@@ -192,9 +209,11 @@ main {
     display: block;
 }
 
+
 .item-description {
     padding: 10px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .item-description h2 {
@@ -206,6 +225,44 @@ main {
     font-size: 14px;
     color: #666;
 }
+
+.item-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    border-top: 1px solid var(--color-border);
+}
+
+/* Preis */
+.item-footer .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+/* Plus-Button */
+.item-footer .add-to-cart {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* ===============================
@@ -221,7 +278,7 @@ main {
 
 /* Hauptbutton */
 .lang-toggle {
-  background: #fff;
+  background: var(--color-white);
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 8px 12px;
@@ -244,7 +301,7 @@ main {
     top: calc(100% + 6px);
     right: 0;             /* statt left: 0 */
     background: white;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     border-radius: 10px;
     list-style: none;
     padding: 6px 0;
@@ -285,6 +342,179 @@ main {
   height: auto;
   border-radius: 3px;
 }
+
+/* ===============================
+   WARENKORB
+   =============================== */
+/* ===============================
+   WARENKORB
+   =============================== */
+.cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 25vw;
+    min-width: 600px;
+    max-width: 600px;
+    background: var(--color-white);
+    border: 2px solid var(--color-primary);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 300;
+    max-height: 70vh;
+    overflow: hidden;
+}
+
+.cart-header {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-toggle {
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    line-height: 1;
+}
+
+.cart.collapsed {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-direction: row;
+    padding: 0;
+}
+
+.cart.collapsed .cart-header,
+.cart.collapsed .cart-items,
+.cart.collapsed .cart-footer {
+    display: none;
+}
+
+.cart.collapsed::after {
+    content: "🛒";
+    font-size: 28px;
+}
+
+/* Badge für Anzahl */
+.cart-badge {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background: red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.cart-items p.empty {
+    color: var(--color-secondary);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-bg);
+    font-weight: bold;
+}
+
+/* ===============================
+   CART ITEM 3-SPALTEN LAYOUT
+   =============================== */
+/* ===============================
+   CART ITEM 3-SPALTEN LAYOUT
+   =============================== */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* alle Items am unteren Ende des Titels ausrichten */
+    margin-bottom: 12px;
+    gap: 10px;
+}
+
+/* Erste Spalte: Titel */
+.cart-item .title {
+    flex: 0 0 50%; /* 50% der Breite */
+    word-wrap: break-word;
+    text-align: left;
+}
+
+/* Zweite Spalte: Buttons horizontal */
+.cart-item .qty-controls {
+    flex: 0 0 25%; /* 25% der Breite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Buttons einheitlich */
+.cart-item button {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+/* Dritte Spalte: Preis */
+.cart-item .price {
+    flex: 0 0 20%; /* 25% der Breite */
+    text-align: right;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+
 
 
 /* ===============================

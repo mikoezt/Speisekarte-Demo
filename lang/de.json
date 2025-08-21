@@ -1,85 +1,101 @@
 {
   "menuTitle": "Speisekarte",
-  "filterTitle":"Filter",
+  "cartTitle": "Bestellung",
+  "cartEmpty": "Noch keine Gerichte hinzugefügt",
+  "cartSum": "Summe",
+  "filterTitle": "Filter",
   "filters": ["Alles", "Pizza", "Burger", "Getränke"],
   "items": [
     {
       "category": "Pizza",
       "title": "Pizza Margherita",
       "description": "Klassische Pizza mit Tomatensoße und Käse",
-      "image": "image/Pizza1.jpg"
+      "image": "image/Pizza1.jpg",
+      "price": "8.50"
     },
     {
       "category": "Pizza",
       "title": "Pizza Salami",
       "description": "Herzhafte Salami auf knusprigem Boden",
-      "image": "image/Pizza2.jpg"
+      "image": "image/Pizza2.jpg",
+      "price": "9.50"
     },
     {
       "category": "Pizza",
       "title": "Pizza Hawaii",
       "description": "Mit Schinken und Ananas – der Klassiker",
-      "image": "image/Pizza3.jpg"
+      "image": "image/Pizza3.jpg",
+      "price": "10.00"
     },
     {
       "category": "Pizza",
       "title": "Pizza Funghi",
       "description": "Frische Champignons auf Tomatensoße",
-      "image": "image/Pizza4.jpg"
+      "image": "image/Pizza4.jpg",
+      "price": "9.00"
     },
     {
       "category": "Pizza",
       "title": "Pizza Tonno",
       "description": "Mit Thunfisch und roten Zwiebeln",
-      "image": "image/Pizza5.jpg"
+      "image": "image/Pizza5.jpg",
+      "price": "10.50"
     },
     {
       "category": "Burger",
       "title": "Cheeseburger",
       "description": "Saftiger Burger mit Käse und Salat",
-      "image": "image/Burger1.jpg"
+      "image": "image/Burger1.jpg",
+      "price": "7.50"
     },
     {
       "category": "Burger",
       "title": "Chicken Burger",
       "description": "Knuspriges Hähnchenfilet mit Mayonnaise",
-      "image": "image/Burger2.jpg"
+      "image": "image/Burger2.jpg",
+      "price": "8.00"
     },
     {
       "category": "Burger",
       "title": "Veggie Burger",
       "description": "Gemüsepatty mit frischem Gemüse",
-      "image": "image/Burger3.jpg"
+      "image": "image/Burger3.jpg",
+      "price": "7.00"
     },
     {
       "category": "Getränke",
       "title": "Cola",
       "description": "Erfrischendes Kaltgetränk",
-      "image": "image/Drink1.jpg"
+      "image": "image/Drink1.jpg",
+      "price": "2.50"
     },
     {
       "category": "Getränke",
       "title": "Orangensaft",
       "description": "Frisch gepresster Orangensaft",
-      "image": "image/Drink2.jpg"
+      "image": "image/Drink2.jpg",
+      "price": "3.00"
     },
     {
       "category": "Getränke",
       "title": "Mineralwasser",
       "description": "Still oder spritzig",
-      "image": "image/Drink3.jpg"
+      "image": "image/Drink3.jpg",
+      "price": "2.00"
     },
     {
       "category": "Getränke",
       "title": "Eistee Pfirsich",
       "description": "Lecker und süß – perfekt im Sommer",
-      "image": "image/Drink4.jpg"
+      "image": "image/Drink4.jpg",
+      "price": "2.80"
     },
     {
       "category": "Getränke",
       "title": "Kaffee",
       "description": "Frisch gebrühter Kaffee",
-      "image": "image/Drink5.jpg"
+      "image": "image/Drink5.jpg",
+      "price": "2.50"
     }
   ]
 }
