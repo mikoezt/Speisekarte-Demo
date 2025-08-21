@@ -1,7 +1,6 @@
 /* ===============================
    FARBEN
    =============================== */
-
 :root {
     --color-bg: #ece7da;
     --color-primary: #49281f;
@@ -11,7 +10,6 @@
     --color-border: #ddd;
     --color-black: #000;
     --color-white: #fff;
-
 }
 
 /* ===============================
@@ -164,7 +162,7 @@ main {
 }
 
 .items-container::before {
-    content: "Unsere Gerichte";   /* Titel im Rahmen */
+    content: "Unsere Gerichte";
     position: absolute;
     top: -14px;
     left: 20px;
@@ -177,7 +175,7 @@ main {
 .items {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 /* BOX FÜR BILDER UND BESCHREIBUNGEN */
@@ -188,7 +186,7 @@ main {
     border: 1px solid var(--color-border);
     border-radius: 12px;
     background: var(--color-white);
-    padding-bottom: 60px; /* Platz für Footer */
+    padding-bottom: 60px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 .item-box:hover {
@@ -208,7 +206,6 @@ main {
     height: auto;
     display: block;
 }
-
 
 .item-description {
     padding: 10px;
@@ -239,14 +236,12 @@ main {
     border-top: 1px solid var(--color-border);
 }
 
-/* Preis */
 .item-footer .price {
     font-size: 16px;
     font-weight: bold;
     color: var(--color-text);
 }
 
-/* Plus-Button */
 .item-footer .add-to-cart {
     background: var(--color-primary);
     color: var(--color-white);
@@ -263,43 +258,37 @@ main {
     align-items: center;
 }
 
-
-
 /* ===============================
    FLAGS / LANGUAGE SWITCHER
    =============================== */
-
-/* Sprachwahl Container */
 .language-switcher {
-    position: absolute;   /* absolut positioniert relativ zum body */
-    right: 20px;          /* Abstand vom rechten Rand */
+    position: absolute;
+    right: 20px;
     z-index: 200;
 }
 
-/* Hauptbutton */
 .lang-toggle {
-  background: var(--color-white);
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 8px 12px;
-  cursor: pointer;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: all 0.2s ease;
+    background: var(--color-white);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
 }
 
 .lang-toggle:hover {
-  background: #f5f5f5;
+    background: #f5f5f5;
 }
 
-/* Dropdown */
 .lang-dropdown {
     position: absolute;
     top: calc(100% + 6px);
-    right: 0;             /* statt left: 0 */
+    right: 0;
     background: white;
     border: 1px solid var(--color-border);
     border-radius: 10px;
@@ -308,7 +297,6 @@ main {
     margin: 0;
     width: 180px;
     z-index: 100;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -317,35 +305,30 @@ main {
 }
 
 .lang-dropdown.open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;  /* jetzt wieder klickbar */
-  transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
 }
 
-/* Dropdown Einträge */
 .lang-dropdown li {
-  padding: 8px 12px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .lang-dropdown li:hover {
-  background: #f0f0f0;
+    background: #f0f0f0;
 }
 
-/* Flaggen */
 .flag-icon {
-  width: 20px;
-  height: auto;
-  border-radius: 3px;
+    width: 20px;
+    height: auto;
+    border-radius: 3px;
 }
 
-/* ===============================
-   WARENKORB
-   =============================== */
 /* ===============================
    WARENKORB
    =============================== */
@@ -354,7 +337,7 @@ main {
     bottom: 20px;
     right: 20px;
     width: 25vw;
-    min-width: 600px;
+    min-width: 300px;
     max-width: 600px;
     background: var(--color-white);
     border: 2px solid var(--color-primary);
@@ -392,17 +375,12 @@ main {
 .cart.collapsed {
     width: 60px;
     height: 60px;
-    min-width: 60px;
-    min-height: 60px;
-    max-width: 60px;
-    max-height: 60px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    flex-direction: row;
     padding: 0;
 }
 
@@ -417,7 +395,6 @@ main {
     font-size: 28px;
 }
 
-/* Badge für Anzahl */
 .cart-badge {
     position: fixed;
     width: 24px;
@@ -432,9 +409,6 @@ main {
     justify-content: center;
     z-index: 1000;
 }
-
-
-
 
 .cart-items {
     flex: 1;
@@ -461,34 +435,28 @@ main {
 /* ===============================
    CART ITEM 3-SPALTEN LAYOUT
    =============================== */
-/* ===============================
-   CART ITEM 3-SPALTEN LAYOUT
-   =============================== */
 .cart-item {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* alle Items am unteren Ende des Titels ausrichten */
+    align-items: flex-end;
     margin-bottom: 12px;
     gap: 10px;
 }
 
-/* Erste Spalte: Titel */
 .cart-item .title {
-    flex: 0 0 50%; /* 50% der Breite */
+    flex: 0 0 50%;
     word-wrap: break-word;
     text-align: left;
 }
 
-/* Zweite Spalte: Buttons horizontal */
 .cart-item .qty-controls {
-    flex: 0 0 25%; /* 25% der Breite */
+    flex: 0 0 25%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-/* Buttons einheitlich */
 .cart-item button {
     width: 28px;
     height: 28px;
@@ -505,105 +473,70 @@ main {
     transition: background 0.2s;
 }
 
-/* Dritte Spalte: Preis */
 .cart-item .price {
-    flex: 0 0 20%; /* 25% der Breite */
+    flex: 0 0 20%;
     text-align: right;
     font-weight: bold;
     white-space: nowrap;
 }
 
-
-
-
-
 /* ===============================
    MEDIA QUERIES
    =============================== */
 
-/* Tablets / Portrait */
+/* Tablet / kleine Tablets */
 @media (max-width: 768px) {
-    .headerCompany {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .headerCompany img {
-        width: 70px;
-        height: 70px;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .headerCompany h1 {
-        font-size: 28px;
-    }
-
-    .menuTitle {
-        font-size: 30px;
-        margin: 20px 0;
-    }
-
-    .filter-content {
-        margin-bottom: 10px;
-    }
-
-    .filterTitle {
-        font-size: 18px;
-    }
-
-    .items-container {
-        width: 100%;
-    }
-
-    .items {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-
-    .language-switcher {
-        top: calc(90px + 10px);
-        right: 20px;
-    }
+    .headerCompany { flex-direction: column; }
+    .headerCompany img { width: 70px; height: 70px; margin-bottom: 10px; }
+    .headerCompany h1 { font-size: 28px; }
+    .menuTitle { font-size: 30px; margin: 20px 0; }
+    .filterTitle { font-size: 18px; }
+    .items { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
+    .item-description h2 { font-size: 16px; }
+    .item-description p { font-size: 13px; }
+    .cart { width: 50vw; max-width: 500px; min-width: 280px; }
 }
 
-/* Smartphones / Portrait */
+/* Smartphones */
 @media (max-width: 480px) {
-    .headerCompany img {
-        width: 60px;
-        height: 60px;
-    }
+    .headerCompany img { width: 60px; height: 60px; }
+    .headerCompany h1 { font-size: 24px; }
+    .menuTitle { font-size: 24px; margin: 15px 0; }
+    .filterTitle { font-size: 16px; }
+    .items { grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; }
+    .item-description h2 { font-size: 14px; }
+    .item-description p { font-size: 12px; }
+    .cart { width: 70vw; max-width: 340px; bottom: 10px; right: 10px; }
+    .cart-footer { font-size: 14px; padding: 8px 10px; }
+    .cart-item .title { flex: 0 0 45%; font-size: 12px; }
+    .cart-item .qty-controls { flex: 0 0 30%; gap: 8px; }
+    .cart-item button { width: 24px; height: 24px; font-size: 14px; }
+    .cart-item .price { flex: 0 0 20%; font-size: 12px; }
+    .cart-badge { width: 20px; height: 20px; font-size: 12px; }
+}
 
-    .headerCompany h1 {
-        font-size: 24px;
-    }
+/* Sehr kleine Smartphones */
+@media (max-width: 320px) {
+    .headerCompany img { width: 50px; height: 50px; }
+    .headerCompany h1 { font-size: 20px; }
+    .menuTitle { font-size: 20px; margin: 10px 0; }
+    .filterTitle { font-size: 14px; }
+    .items { grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 8px; }
+    .item-description h2 { font-size: 13px; }
+    .item-description p { font-size: 11px; }
+    .item-footer { padding: 6px 8px; gap: 6px; }
+    .item-footer .price { font-size: 12px; }
+    .item-footer .add-to-cart { width: 24px; height: 24px; font-size: 16px; }
+    .cart { width: 80vw; max-width: 280px; bottom: 10px; right: 10px; }
+    .cart-footer { font-size: 12px; padding: 6px 8px; }
+    .cart-item .title { flex: 0 0 40%; font-size: 11px; }
+    .cart-item .qty-controls { flex: 0 0 35%; gap: 6px; }
+    .cart-item button { width: 20px; height: 20px; font-size: 12px; }
+    .cart-item .price { font-size: 11px; }
+    .cart-badge { width: 18px; height: 18px; font-size: 11px; }
+}
 
-    .menuTitle {
-        font-size: 24px;
-        margin: 15px 0;
-    }
-
-    .filterTitle {
-        font-size: 16px;
-    }
-
-    .items-container {
-        padding: 0 10px;
-    }
-
-    .items {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    }
-
-    .item-description h2 {
-        font-size: 16px;
-    }
-
-    .item-description p {
-        font-size: 12px;
-    }
-
-    .language-switcher {
-        top: calc(80px + 10px);
-        right: 15px;
-    }
+/* Dynamische Grid-Breite */
+.items {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
